@@ -31,7 +31,7 @@
 
         <div class=container>
             <div class="row">
-                <div class="col-md-12" id="heading">
+                <div class="col-md-4" id="heading">
                     <h1>Crystal Collector!</h1>
                 </div>
 
@@ -40,7 +40,7 @@
 
         <div class=container>
             <div class="row">
-                <div class="col-md-12" id="instructions">
+                <div class="col-md-6" id="instructions">
                     <li>You will be given a random number at the start of the game.</li>
 
                     <li>There are four crystals below. By clicking on a crystal you will add a
@@ -57,16 +57,18 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="targetNumber">
+                <div class="col-md-3" id="targetNumber">
                     <h2>Target Number: </h2>
                     <span id="randomNumber"></span>
                     </h2>
 
                 </div>
-                <div class="col-md-6" id="winsAndLosses">
-                    <h6> id="numberOfWins">Wins:</h6>
+                <div class="col-md-1" id="winsAndLosses">
+                    <h6>Wins:</h6>
+                    <span id="numberOfWins"></span>
 
-                    <h6 id="numberOfLosses"></h6>
+                    <h6>Losses:</h6>
+                    <span id="numberOfLosses"></span>
                 </div>
             </div>
         </div>
@@ -74,32 +76,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <img src="assets/images/blue.png" class="crystal" id="one" width=200 height=200>
+                    <img src="assets/images/blue.png" class="crystal" id="one" width=150 height=150>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <img src="assets/images/rose.jpg" class="crystal" id="two" width=200 height=200>
+                    <img src="assets/images/rose.jpg" class="crystal" id="two" width=150 height=150>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <img src="assets/images/pink.jpeg" class="crystal" id="three" width=200 height=200>
+                    <img src="assets/images/pink.jpeg" class="crystal" id="three" width=150 height=150>
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <img src="assets/images/red.png" class="crystal" id="four" width=200 height=200>
+                    <img src="assets/images/red.png" class="crystal" id="four" width=150 height=150>
                 </div>
             </div>
         </div>
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6" id="playerTotal">
+                <div class="col-md-3" id="playerTotal">
                     <h2>Your total score is: </h2>
 
                 </div>
-                <div class="col-md-6" id="finalTotalNumber">
 
-                    <h6 id="finalTotalNumber"></h6>
+                <div class="container">
+                    <div class="row" <div class="col-md-3" id="finalTotalNumber">
 
+                    </div>
                 </div>
-
             </div>
 
         </div>
@@ -109,3 +111,9 @@
 </body>
 
 </html>
+
+<!-- Needs to be done -->
+<!-- finalTotalNumber div needs adjusting
+    (it doesn't contain text - it will contain the players running total)
+     finalTotalNumber is not ahowing up!!!
+     Main container?? -->

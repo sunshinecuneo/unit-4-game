@@ -1,60 +1,52 @@
-#mainContainer {
-    background: teal;
+#heading {
+    background: orangered;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
     border: black;
     border-width: thin;
-}
-
-#heading {
-
-}
-#titleContainer {
-    color: white;
-    background: orange;
-    font-size: 30px;
-    padding: 20px;
-    float: left;
-    width: 100%;
+    width: 30px;
+    height: 100px;
+    padding: 25px;
 }
 
 #instructions {
     color: teal;
-    font-size: 20px;
     background: peachpuff;
-    border-color: teal;
+    font-size: 20px;
     padding: 20px;
-    float: left;
-    width: 400px;
+    width: 100%;
     float: left;
 }
 
-#randomNumberContainer {
+#targetNumber {
     background-color: green;
-    font-size: 40px;
+    font-size: 30px;
     color: black;
     padding: 10px;
     float: left;
 }
 
-.winsAndLosses {
+#winsAndLosses {
     color: black;
     background: lightblue;
     font-size: 25px;
 }
 
-.crystals {
-    background-color: white;
+/* .crystals {
+    background-color: purple;
     height: 10px;
     max-width: 10px;
-}
+} */
 
-.playerTotal {
+#playerTotal {
     color: white;
     background: green;
     font-size: 30px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 #finalTotalNumber {
