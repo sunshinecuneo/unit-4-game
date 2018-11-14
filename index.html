@@ -9,24 +9,103 @@
     <!-- Bootstrap links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-   <!-- css reset -->
+        crossorigin="anonymous"></script> -->
+    <!-- jQuery Link -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- css reset -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-     <!-- My css styling -->
+    <!-- My css styling -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <title>Document</title>
+    <title>Cystals Collector!</title>
 </head>
 
 <body>
 
+    <div id="mainCcontainer">
 
+        <div class=container>
+            <div class="row">
+                <div class="col-md-12" id="heading">
+                    <h1>Crystal Collector!</h1>
+                </div>
 
+            </div>
+        </div>
 
+        <div class=container>
+            <div class="row">
+                <div class="col-md-12" id="instructions">
+                    <li>You will be given a random number at the start of the game.</li>
+
+                    <li>There are four crystals below. By clicking on a crystal you will add a
+                        specific amount of points to your total score.</li>
+
+                    <li>You will win the game by matching your total score to random number, you
+                        lose the game if your total score goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you clcick on it.</li>
+                    <li>Each time when the game starts, the game will change the values of
+                        each crystal.</li>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="targetNumber">
+                    <h2>Target Number: </h2>
+                    <span id="randomNumber"></span>
+                    </h2>
+
+                </div>
+                <div class="col-md-6" id="winsAndLosses">
+                    <h6> id="numberOfWins">Wins:</h6>
+
+                    <h6 id="numberOfLosses"></h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <img src="assets/images/blue.png" class="crystal" id="one" width=200 height=200>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="assets/images/rose.jpg" class="crystal" id="two" width=200 height=200>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="assets/images/pink.jpeg" class="crystal" id="three" width=200 height=200>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="assets/images/red.png" class="crystal" id="four" width=200 height=200>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" id="playerTotal">
+                    <h2>Your total score is: </h2>
+
+                </div>
+                <div class="col-md-6" id="finalTotalNumber">
+
+                    <h6 id="finalTotalNumber"></h6>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+        <!-- WHERE DO I PUT MY JQUERY LINK??? -->
 </body>
+
 </html>
