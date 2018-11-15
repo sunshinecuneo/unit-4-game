@@ -27,43 +27,43 @@
 
 <body>
 
-    <div id="mainCcontainer">
+    <!-- <div id="mainCcontainer"> -->
 
-        <div class=container>
+    <div class=container>
             <div class="row">
-                <div class="col-md-4" id="heading">
+                <div class="col-md-12" id="heading">
                     <h1>Crystal Collector!</h1>
                 </div>
 
             </div>
-        </div>
+        <!-- </div> -->
 
-        <div class=container>
+        <!-- <div class=container> -->
             <div class="row">
-                <div class="col-md-6" id="instructions">
-                    <li>You will be given a random number at the start of the game.</li>
+                <div class="col-md-12" id="instructions">
+                    <li>You will be given a random target number at the start of the game.</li>
 
                     <li>There are four crystals below. By clicking on a crystal you will add a
                         specific amount of points to your total score.</li>
 
-                    <li>You will win the game by matching your total score to random number, you
-                        lose the game if your total score goes above the random number.</li>
-                    <li>The value of each crystal is hidden from you until you clcick on it.</li>
-                    <li>Each time when the game starts, the game will change the values of
-                        each crystal.</li>
+                    <li>You will win the game by matching your total score to the random target number;
+                        you lose the game if your total score goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time the game starts over, the game will change the values of
+                        each crystal as well as the random target number.</li>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-md-3" id="targetNumber">
+                <div class="col-md-6" id="targetNumber">
                     <h2>Target Number: </h2>
                     <span id="randomNumber"></span>
                     </h2>
 
                 </div>
-                <div class="col-md-1" id="winsAndLosses">
+                <div class="col-md-6" id="winsAndLosses">
                     <h6>Wins:</h6>
                     <span id="numberOfWins"></span>
 
@@ -71,9 +71,9 @@
                     <span id="numberOfLosses"></span>
                 </div>
             </div>
-        </div>
+        <!-- </div>
 
-        <div class="container">
+        <div class="container"> -->
             <div class="row">
                 <div class="col-md-3 col-sm-12">
                     <img src="assets/images/blue.png" class="crystal" id="one" width=150 height=150>
@@ -88,26 +88,28 @@
                     <img src="assets/images/red.png" class="crystal" id="four" width=150 height=150>
                 </div>
             </div>
-        </div>
+        <!-- </div>
 
-        <div class="container">
+        <div class="container"> -->
             <div class="row">
-                <div class="col-md-3" id="playerTotal">
-                    <h2>Your total score is: </h2>
-
-                </div>
-
-                <div class="container">
-                    <div class="row" <div class="col-md-3" id="finalTotalNumber">
-
-                    </div>
+                <div class="col-md-12" id="playerTotal">
+                    <h2>Your total score is:</h2>
                 </div>
             </div>
 
-        </div>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+            <!-- <div class="container"> -->
+                <div class="row">
+                     <div class="col-md-12" id="finalTotalNumber">
+                    <h2 id="totalscore"> </h2>
+                     </div>
+                </div>
+            <!-- </div>
+        </div> -->
 
-        <!-- WHERE DO I PUT MY JQUERY LINK??? -->
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <!-- WHERE DO I PUT MY JQUERY LINK??? -->
 </body>
 
 </html>

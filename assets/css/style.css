@@ -1,3 +1,7 @@
+body {                                                   
+    background-image: url("circuit.png");
+}
+
 #heading {
     background: orangered;
     font-size: 40px;
@@ -20,7 +24,7 @@
 }
 
 #targetNumber {
-    background-color: green;
+    background-color: yellow;
     font-size: 30px;
     color: black;
     padding: 10px;
@@ -43,17 +47,21 @@
     color: white;
     background: green;
     font-size: 30px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 40px;
-    padding-bottom: 30px;
+    padding: 15px 15px 40px 30px;
 }
 
 #finalTotalNumber {
     color: white;
     background: green;
-    padding: 15px;
+    font-size: 30px;
+    padding: 15px 15px 40px 30px;
+    /* width: 200px;
+    height: 200px; */
 }
 
+#totalscore {
+    width: 30px
+
+} 
 
 

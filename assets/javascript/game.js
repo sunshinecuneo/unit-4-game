@@ -38,6 +38,16 @@ $(document).ready(function () {
     $("#numberOfWins").text(wins);
     $("#numberOfLosses").text(losses);
 
+    // Wins function
+    //Adds the wins to playerTotal
+    // Had to place this function here in this code becuz when it was 
+    // down by the lose function the game had an error when player would win.
+    function winsfn() {
+        alert("Yay! You win!");
+        wins++;
+        $("#numberOfWIns").text(wins);
+        reset();
+    }
 
     //click function
     $(".crystal").click(function (event) {
@@ -45,11 +55,11 @@ $(document).ready(function () {
         var crystalValue = event.target.dataset.value
         playerTotal = parseInt(playerTotal) + parseInt(crystalValue)
         console.log(playerTotal)
+        $("#totalscore").text(playerTotal)
 
-
-    //sets win/lose conditions
+        //sets win/lose conditions
         if (playerTotal === Random) {
-            wins();
+            winsfn();
         } else if (playerTotal > Random) {
             lose();
         }
@@ -60,10 +70,10 @@ $(document).ready(function () {
         Random = Math.floor(Math.random() * 19 + 120);
         console.log(Random)
         $("#randomNumber").text(Random);
-        num1 = Math.floor(Math.random() * 1 + 12)
-        num2 = Math.floor(Math.random() * 1 + 12)
-        num3 = Math.floor(Math.random() * 1 + 12)
-        num4 = Math.floor(Math.random() * 1 + 12)
+        num1 = Math.floor(Math.random() * 11 + 1)
+        num2 = Math.floor(Math.random() * 11 + 1)
+        num3 = Math.floor(Math.random() * 11 + 1)
+        num4 = Math.floor(Math.random() * 11 + 1)
         $("#one").attr("data-value", num1);
         $("#two").attr("data-value", num2);
         $("#three").attr("data-value", num3);
@@ -73,26 +83,12 @@ $(document).ready(function () {
         $("#finalTotal").text(playerTotal);
     }
 
-    // Wins function
-    //Adds the wins to playerTotal
-    function wins() {
-        alert("You win!");
-        wins++;
-        $("#numberOfWIns").text(wins);
-        reset();
-    }
     // Lose function
     //Adds the losses to the playerTotal.
     function lose() {
-        alert("You lose!");
+        alert("You lose, try again!");
         losses++;
         $("#numberOfLosses").text(losses);
         reset();
     }
 });
-
-
-// wins function
-// "Your total score" is not showing up??
-// all my random jewell values are sometimes 12 
-
