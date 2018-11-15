@@ -21,7 +21,7 @@ part is frustrating me!
 
 I have a hard time knowing where to start and often get stuck and don't know how to
 get unstuck. Thanks to my tutor for help, Sarah for a few valuable minutes of her
-lunch time one day and as always Sangeetha for her dilignece in nudging me the right
-direction and helping me figure things out. Soory I frustrate you Sangeetha!
+lunch time one day and as always Sangeetha for her diligence in nudging me the right
+direction and helping me figure things out. Sorry I frustrate you Sangeetha!
 
 On to the next assignment! UGH!! :)
