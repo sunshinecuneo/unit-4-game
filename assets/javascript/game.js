@@ -45,7 +45,7 @@ $(document).ready(function () {
     function winsfn() {
         alert("Yay! You win!");
         wins++;
-        $("#numberOfWIns").text(wins);
+        $("#numberOfWins").text(wins);
         reset();
     }
 
